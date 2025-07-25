@@ -1,5 +1,3 @@
-Aquí tienes el **README.md completo y actualizado** para tu proyecto, listo para copiar y pegar en tu repositorio:
-
 ```markdown
 # 🚀 ForIT Todo Challenge - FullStack App
 
