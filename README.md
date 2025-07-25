@@ -1,63 +1,100 @@
-# 📝 ForIT Todo Challenge  
+Aquí tienes el **README.md completo y actualizado** para tu proyecto, listo para copiar y pegar en tu repositorio:
 
-![React](https://img.shields.io/badge/React-18.2-blue)  
-![Node.js](https://img.shields.io/badge/Node.js-20-green)  
-![Express](https://img.shields.io/badge/Express-4.18-lightgrey)  
+```markdown
+# 🚀 ForIT Todo Challenge - FullStack App
 
-Aplicación de lista de tareas con **React** (frontend) y **Node.js + Express** (backend). 
-## 🚀 Cómo ejecutar el proyecto  
+![React](https://img.shields.io/badge/React-18.2-blue)
+![Node.js](https://img.shields.io/badge/Node.js-20-green)
+![Express](https://img.shields.io/badge/Express-4.18-lightgrey)
 
-### Backend (Terminal 1)  
-```bash  
-cd backend  
-npm install  
-npm start  
-```  
-*El servidor iniciará en:* http://localhost:5000  
+Aplicación completa de lista de tareas con **React (Frontend)** y **Node.js + Express (Backend)**.  
+Cumple con todos los requisitos del challenge de Academia ForIT.
 
-### Frontend (Terminal 2)  
-```bash  
-cd frontend  
-npm install  
-npm run dev  
-```  
-*La aplicación se abrirá en:* http://localhost:3000  
+## 📌 Características
 
-## 🧩 Componentes implementados  
-| Componente | Función |  
-|------------|---------|  
-| `TaskList` | Muestra todas las tareas |  
-| `TaskItem` | Renderiza cada tarea individual |  
-| `TaskForm` | Formulario para crear/editar tareas |  
+### Backend
+✔️ API REST con Express  
+✔️ 4 Endpoints (CRUD completo)  
+✔️ Variables de entorno  
+✔️ Persistencia en memoria  
 
-## 📡 Endpoints de la API  
-```http  
-GET    /api/tasks        → Obtener todas las tareas  
-POST   /api/tasks        → Crear nueva tarea  
-PUT    /api/tasks/:id    → Actualizar tarea existente  
-DELETE /api/tasks/:id    → Eliminar tarea  
-```  
+### Frontend
+✔️ Componentes React (TaskList, TaskItem, TaskForm)  
+✔️ Routing con React Router  
+✔️ Llamadas API con Fetch  
+✔️ Validación de formularios  
 
-## 🔐 Configuración de entorno  
-Crea estos archivos:  
+## 🛠️ Instalación
 
-### backend/.env  
+### 1. Clonar repositorio
+```bash
+git clone https://github.com/BorjaRafa/forit-todo-challenge.git
+cd forit-todo-challenge
+```
+
+### 2. Configurar backend
+```bash
+cd backend
+npm install
+npm start
+```
+El servidor iniciará en: http://localhost:5000
+
+### 3. Configurar frontend (en otra terminal)
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+La aplicación estará en: http://localhost:3000
+
+## 📡 Endpoints API
+
+```http
+GET    /api/tasks       → Obtener todas las tareas
+POST   /api/tasks       → Crear nueva tarea
+PUT    /api/tasks/:id   → Actualizar tarea existente
+DELETE /api/tasks/:id   → Eliminar tarea
+```
+
+## 🔐 Variables de entorno
+
+Crea estos archivos:
+
+### backend/.env
 ```env
 PORT=5000
 ```
 
-### frontend/.env  
+### frontend/.env
 ```env
 VITE_API_URL=http://localhost:5000
 ```
 
-## 🖼️ Capturas de pantalla  
-![Lista de tareas](/screenshots/list.png)  
- 
+## 🧩 Estructura del proyecto
 
-![Formulario](/screenshots/form.png)  
+```
+forit-todo-challenge/
+├── backend/
+│   ├── server.js       # API Endpoints
+│   ├── package.json
+│   └── .env
+├── frontend/
+│   ├── src/
+│   │   ├── components/ # TaskList, TaskItem, TaskForm
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── .env
+└── README.md
+```
+
+## 💻 Tecnologías usadas
+
+- **Frontend**: React, Vite, React Router  
+- **Backend**: Node.js, Express, CORS  
+- **Herramientas**: Git, GitHub  
 
 ---
 
-✨ **Challenge completado para Academia ForIT 2025**  
-```
+✨ **Challenge completado para Academia ForIT**  
