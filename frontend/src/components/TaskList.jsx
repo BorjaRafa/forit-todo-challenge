@@ -1,3 +1,10 @@
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!task.title.trim()) {
+    alert("El título es obligatorio");
+    return;
+  } 
+};
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
