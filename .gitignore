@@ -1,1 +1,11 @@
+# Ignorar archivos de entorno
+backend/.env
+frontend/.env
 
+# Ignorar node_modules
+node_modules/
+*/node_modules/
+
+# Ignorar logs y archivos temporales
+*.log
+.DS_Store
